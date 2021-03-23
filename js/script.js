@@ -118,19 +118,34 @@ const icons = [
   },
 ];
 
+// Milestone 1
 
 icons.forEach((element, array) => {
   let icona = `<div>
-                <i class="${element.family} ${element.prefix}${element.name}"></i>
+                <i class="${element.family} ${element.prefix}${element.name} ${element.category}"></i>
                 <div class="title">${element.name}</div>
-              </div>`
+              </div>`;
   $('.icons').append(icona);
 });
 
 
+// Milestone 2
+
+var iconeFontawesome = document.getElementsByTagName("i");
+for(var i = 0; i < iconeFontawesome.length; i++){
+
+   if (iconeFontawesome[i].classList.contains("food")) {
+     $(iconeFontawesome[i]).addClass("green");
+   } else if (iconeFontawesome[i].classList.contains("beverage")) {
+     $(iconeFontawesome[i]).addClass("blue");
+   } else {
+     $(iconeFontawesome[i]).addClass("orange");
+   }
+
+}
 
 
-
+// Milestone 3
 
 
 
