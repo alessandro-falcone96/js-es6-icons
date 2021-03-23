@@ -119,12 +119,13 @@ const icons = [
 ];
 
 
-// var pippo = document.getElementByClassName('pappa');
-//
-// pippo.getElementByClassName('pappa').innerHTML = "ADDIO";
-
-// document.getElementByClassName("pappa").innerHTML = "ADDIO";
-
+icons.forEach((element, array) => {
+  let icona = `<div>
+                <i class="${element.family} ${element.prefix}${element.name}"></i>
+                <div class="title">${element.name}</div>
+              </div>`
+  $('.icons').append(icona);
+});
 
 
 

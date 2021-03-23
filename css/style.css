@@ -41,7 +41,7 @@ body {
 
 .icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
